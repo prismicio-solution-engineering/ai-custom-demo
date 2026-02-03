@@ -1,6 +1,9 @@
 {
+  "id": "landing",
+  "label": "Landing",
+  "repeatable": true,
+  "status": true,
   "format": "page",
-  "id": "landing_page",
   "json": {
     "Main": {
       "uid": {
@@ -10,11 +13,30 @@
         }
       },
       "slices": {
-        "config": {
-          "choices": {}
-        },
+        "type": "Slices",
         "fieldset": "Slice Zone",
-        "type": "Slices"
+        "config": {
+          "choices": {
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "faq": {
+              "type": "SharedSlice"
+            },
+            "media_feature": {
+              "type": "SharedSlice"
+            },
+            "carousel": {
+              "type": "SharedSlice"
+            },
+            "content": {
+              "type": "SharedSlice"
+            },
+            "cta": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "SEO & Metadata": {
@@ -44,8 +66,5 @@
         "type": "Image"
       }
     }
-  },
-  "label": "Landing page",
-  "repeatable": true,
-  "status": true
+  }
 }

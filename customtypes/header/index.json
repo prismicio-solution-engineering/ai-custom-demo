@@ -1,10 +1,54 @@
 {
-  "format": "custom",
   "id": "header",
+  "json": {
+    "Main": {
+      "ctas": {
+        "type": "Link",
+        "config": {
+          "label": "CTAs",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": true,
+          "variants": ["Primary", "Secondary", "Link"]
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "navigation_links": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Layout": {
+      "logo_position": {
+        "type": "Boolean",
+        "config": {
+          "label": "Logo position",
+          "placeholder_false": "left",
+          "placeholder_true": "center",
+          "default_value": false
+        }
+      },
+      "menu_position": {
+        "type": "Select",
+        "config": {
+          "label": "Menu position",
+          "placeholder": "",
+          "options": ["center", "left", "right"],
+          "default_value": "center"
+        }
+      }
+    }
+  },
   "label": "Header",
   "repeatable": false,
   "status": true,
-  "json": {
-    "Main": {}
-  }
+  "format": "custom"
 }

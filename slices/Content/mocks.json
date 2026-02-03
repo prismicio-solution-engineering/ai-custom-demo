@@ -1,0 +1,193 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Irure labore incididunt laborum Lorem ea. Minim amet adipisicing pariatur nisi officia."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "twoColumns",
+		"primary": {
+			"content_left_column": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nisi veniam mollit aute cupidatat labore cillum occaecat ullamco cillum nostrud esse pariatur quis sit deserunt. Nostrud sunt in eiusmod amet excepteur sint laboris. Eu cupidatat tempor excepteur officia irure minim Lorem exercitation enim eu quis dolor ullamco."
+						}
+					}
+				]
+			},
+			"content_right_column": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit reprehenderit Lorem labore in id pariatur labore sunt. Sint ad exercitation exercitation sit minim est sit velit id reprehenderit nulla laboris culpa laboris. Velit mollit incididunt aliquip ipsum proident sint fugiat ad ex."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "twoColumnsImage",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eu reprehenderit non nostrud anim laboris sit id reprehenderit non excepteur. Nulla cillum culpa velit laboris nulla esse officia ex laborum irure. Amet elit commodo elit tempor incididunt in velit in."
+						}
+					}
+				]
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+					"width": 4380,
+					"height": 2895
+				},
+				"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?rect=743%2C0%2C2895%2C2895&w=1000&h=1000",
+				"width": 1000,
+				"height": 1000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 743,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "bet",
+				"thumbnails": {}
+			},
+			"image_side": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "quote",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nulla labore ipsum non labore dolore labore aute laboris. Amet laborum non adipisicing consectetur commodo amet est proident labore reprehenderit."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "twoColumnsImages",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ullamco deserunt proident deserunt et aliquip non veniam in consectetur et in reprehenderit. Ut duis eiusmod commodo ex minim commodo dolor incididunt nisi in sunt fugiat in. Quis occaecat anim quis quis voluptate incididunt qui enim ea Lorem qui ipsum fugiat."
+						}
+					}
+				]
+			},
+			"images": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"image",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+										"width": 5243,
+										"height": 3495
+									},
+									"url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?rect=874%2C0%2C3495%2C3495&w=1000&h=1000",
+									"width": 1000,
+									"height": 1000,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 874,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "history",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"images_side": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

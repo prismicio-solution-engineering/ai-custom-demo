@@ -1,0 +1,42 @@
+{
+  "id": "article_author",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "author_name": {
+        "type": "Text",
+        "config": {
+          "label": "Author Name",
+          "placeholder": ""
+        }
+      },
+      "author_role": {
+        "type": "Text",
+        "config": {
+          "label": "Author role",
+          "placeholder": ""
+        }
+      },
+      "author_image": {
+        "type": "Image",
+        "config": {
+          "label": "Author image",
+          "constraint": {
+            "width": 48,
+            "height": 48
+          },
+          "thumbnails": []
+        }
+      }
+    }
+  },
+  "label": "Article author",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

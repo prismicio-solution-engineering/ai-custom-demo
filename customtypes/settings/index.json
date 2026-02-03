@@ -1,11 +1,7 @@
 {
-  "format": "custom",
   "id": "settings",
-  "label": "Settings",
-  "repeatable": false,
-  "status": true,
   "json": {
-    "Main": {
+    "Company": {
       "company_name": {
         "type": "Text",
         "config": {
@@ -21,6 +17,39 @@
           "thumbnails": []
         }
       }
+    },
+    "Branding": {
+      "font_heading": {
+        "type": "Select",
+        "config": {
+          "label": "Font - Heading",
+          "placeholder": "",
+          "options": ["Proxima Bold", "Arial Bold"],
+          "default_value": "Proxima Bold"
+        }
+      },
+      "font_txt": {
+        "type": "Select",
+        "config": {
+          "label": "Font - Text",
+          "placeholder": "",
+          "options": ["Inter", "Helvetica"],
+          "default_value": "Inter"
+        }
+      },
+      "border_style": {
+        "type": "Select",
+        "config": {
+          "label": "Border style",
+          "placeholder": "",
+          "options": ["Square", "Medium rounded", "Rounded"],
+          "default_value": "Square"
+        }
+      }
     }
-  }
+  },
+  "label": "Settings",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
 }

@@ -1,0 +1,292 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Nearby"
+						}
+					}
+				]
+			},
+			"txt": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Deserunt officia sunt laborum et et Lorem."
+						}
+					}
+				]
+			},
+			"btn": {
+				"__TYPE__": "LinkContent",
+				"key": "96b63f9c-f607-4f77-b5a7-3578d18d65fd",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "fresh",
+					"variant": "Primary"
+				}
+			},
+			"grp": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"question",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Someone"
+											}
+										}
+									]
+								}
+							],
+							[
+								"answer",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Mollit quis consequat veniam sint laboris veniam tempor laboris irure ullamco labore do excepteur sunt anim."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "variation1",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Bottom"
+						}
+					}
+				]
+			},
+			"txt": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit minim Lorem nulla cupidatat irure in eiusmod et proident esse ex labore ipsum eiusmod nostrud."
+						}
+					}
+				]
+			},
+			"grp": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"question",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Instant"
+											}
+										}
+									]
+								}
+							],
+							[
+								"answer",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ut ipsum aute cillum sit ad ex excepteur fugiat est laboris minim. Non duis enim in do non ipsum pariatur tempor cupidatat mollit voluptate."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"title_foot": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "Rising"
+						}
+					}
+				]
+			},
+			"txt_foot": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ut adipisicing eu aliqua elit deserunt eiusmod officia ea commodo."
+						}
+					}
+				]
+			},
+			"btn": {
+				"__TYPE__": "LinkContent",
+				"key": "83574f48-8a6f-4a5a-a8e9-8dd0bbac3393",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "lot",
+					"variant": "Secondary"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "variation2",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Worried"
+						}
+					}
+				]
+			},
+			"txt": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ullamco officia exercitation est tempor."
+						}
+					}
+				]
+			},
+			"grp": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"question",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Rapidly"
+											}
+										}
+									]
+								}
+							],
+							[
+								"answer",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Do ut proident exercitation anim minim occaecat culpa. Ea occaecat veniam est cillum laborum minim nulla pariatur nostrud do. Qui non excepteur minim aliquip laborum do esse reprehenderit cillum aliquip nostrud."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"title_foot": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "Cross"
+						}
+					}
+				]
+			},
+			"txt_foot": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Irure Lorem nisi dolor consectetur nostrud aute minim cupidatat dolore occaecat irure culpa proident voluptate. Aute non elit occaecat dolor laborum consequat sint deserunt."
+						}
+					}
+				]
+			},
+			"btn": {
+				"__TYPE__": "LinkContent",
+				"key": "8ccbd423-0229-478b-bce5-a61d177d4d6c",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com",
+					"text": "cool",
+					"variant": "Secondary"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]
