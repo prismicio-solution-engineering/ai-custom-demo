@@ -1672,9 +1672,75 @@ export type HeroSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Hero → With background image → Primary*
+ */
+export interface HeroSliceWithBackgroundImagePrimary {
+  /**
+   * Title field in *Hero → With background image → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.withBackgroundImage.primary.title
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Description field in *Hero → With background image → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.withBackgroundImage.primary.description
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Buttons field in *Hero → With background image → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.withBackgroundImage.primary.buttons
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  buttons: prismic.Repeatable<
+    prismic.LinkField<
+      string,
+      string,
+      unknown,
+      prismic.FieldState,
+      "Primary" | "Secondary"
+    >
+  >;
+
+  /**
+   * Background image field in *Hero → With background image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.withBackgroundImage.primary.image
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * With background image variation for Hero Slice
+ *
+ * - **API ID**: `withBackgroundImage`
+ * - **Description**: Centered hero with full-bleed background image and overlay
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type HeroSliceWithBackgroundImage = prismic.SharedSliceVariation<
+  "withBackgroundImage",
+  Simplify<HeroSliceWithBackgroundImagePrimary>,
+  never
+>;
+
+/**
  * Slice variation for *Hero*
  */
-type HeroSliceVariation = HeroSliceDefault;
+type HeroSliceVariation = HeroSliceDefault | HeroSliceWithBackgroundImage;
 
 /**
  * Hero Shared Slice
@@ -2351,8 +2417,10 @@ declare module "@prismicio/client" {
       FaqSliceVariation2,
       HeroSlice,
       HeroSliceDefaultPrimary,
+      HeroSliceWithBackgroundImagePrimary,
       HeroSliceVariation,
       HeroSliceDefault,
+      HeroSliceWithBackgroundImage,
       MediaFeatureSlice,
       MediaFeatureSliceDefaultPrimary,
       MediaFeatureSliceVariation1Primary,
