@@ -1,0 +1,23 @@
+:root {
+    /* Brand Colors */
+    --color-primary: #6366f1;
+    --color-secondary: #ec4899;
+    --color-background: #ffffff;
+
+    /* Text Colors */
+    --text-heading: #171717;
+    --text-body: #6366f1;
+    --text-code: #8c8c8c;
+
+    /* Typography */
+    --font-family: var(--font-geist-sans);
+    --text-size-heading: 16px;
+    --text-size-body: 14px;
+
+    /* Radius */
+    --radius-primary: 8px;
+    --radius-secondary: 4px;
+
+
+
+}
