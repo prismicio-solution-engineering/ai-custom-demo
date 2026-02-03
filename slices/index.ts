@@ -7,6 +7,7 @@ export const components = {
   content: dynamic(() => import("./Content")),
   cta: dynamic(() => import("./Cta")),
   faq: dynamic(() => import("./Faq")),
+  hero: dynamic(() => import("./Hero")),
   media_feature: dynamic(() => import("./Feature")),
   navigation_links: dynamic(() => import("./NavigationLinks")),
   testimonials: dynamic(() => import("./Testimonials")),
