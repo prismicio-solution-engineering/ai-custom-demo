@@ -164,41 +164,6 @@ type BlogArticleDocumentDataSlicesSlice =
   | MediaFeatureSlice;
 
 /**
- * Item in *Blog Article → Social Cards - Facebook & Twitter*
- */
-export interface BlogArticleDocumentDataSocialCardsItem {
-  /**
-   * Social Card Image field in *Blog Article → Social Cards - Facebook & Twitter*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.social_cards[].social_card_image
-   * - **Documentation**: https://prismic.io/docs/fields/image
-   */
-  social_card_image: prismic.ImageField<never>;
-
-  /**
-   * Social Card Title field in *Blog Article → Social Cards - Facebook & Twitter*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.social_cards[].social_card_title
-   * - **Documentation**: https://prismic.io/docs/fields/text
-   */
-  social_card_title: prismic.KeyTextField;
-
-  /**
-   * Social card description field in *Blog Article → Social Cards - Facebook & Twitter*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.social_cards[].social_card_description
-   * - **Documentation**: https://prismic.io/docs/fields/text
-   */
-  social_card_description: prismic.KeyTextField;
-}
-
-/**
  * Content for Blog Article documents
  */
 interface BlogArticleDocumentData {
@@ -270,9 +235,9 @@ interface BlogArticleDocumentData {
    * Meta Title field in *Blog Article*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: My title for Search Engine
+   * - **Placeholder**: A title of the page used for social media and search engines
    * - **API ID Path**: blog_article.meta_title
-   * - **Tab**: SEO and Metadata
+   * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/fields/text
    */;
   meta_title: prismic.KeyTextField;
@@ -281,42 +246,23 @@ interface BlogArticleDocumentData {
    * Meta Description field in *Blog Article*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: The description that will appear in search engine
+   * - **Placeholder**: A brief summary of the page
    * - **API ID Path**: blog_article.meta_description
-   * - **Tab**: SEO and Metadata
+   * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/fields/text
    */
   meta_description: prismic.KeyTextField;
 
   /**
-   * CanonicalLink field in *Blog Article*
+   * Meta Image field in *Blog Article*
    *
-   * - **Field Type**: Link
+   * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.canonicalLink
-   * - **Tab**: SEO and Metadata
-   * - **Documentation**: https://prismic.io/docs/fields/link
+   * - **API ID Path**: blog_article.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/fields/image
    */
-  canonicalLink: prismic.LinkField<
-    string,
-    string,
-    unknown,
-    prismic.FieldState,
-    never
-  >;
-
-  /**
-   * Social Cards - Facebook & Twitter field in *Blog Article*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.social_cards[]
-   * - **Tab**: SEO and Metadata
-   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
-   */
-  social_cards: prismic.GroupField<
-    Simplify<BlogArticleDocumentDataSocialCardsItem>
-  >;
+  meta_image: prismic.ImageField<never>;
 }
 
 /**
@@ -2276,7 +2222,6 @@ declare module "@prismicio/client" {
       BlogArticleDocument,
       BlogArticleDocumentData,
       BlogArticleDocumentDataSlicesSlice,
-      BlogArticleDocumentDataSocialCardsItem,
       FooterDocument,
       FooterDocumentData,
       HeaderDocument,

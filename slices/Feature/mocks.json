@@ -5,7 +5,7 @@
 		"primary": {
 			"tagline": {
 				"__TYPE__": "FieldContent",
-				"value": "scientific",
+				"value": "however",
 				"type": "Text"
 			},
 			"title": {
@@ -25,7 +25,7 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Velit dolor aliquip sint magna sint commodo culpa voluptate occaecat Lorem aute laborum. Excepteur laborum non dolore pariatur adipisicing sint occaecat pariatur pariatur reprehenderit. Lorem excepteur nisi cupidatat Lorem voluptate tempor aliqua sint duis commodo ea esse aliquip et sint."
+							"text": "Ipsum excepteur ut consequat duis consequat do occaecat culpa irure officia dolore proident. Occaecat ut eu sit adipisicing consectetur officia amet anim consequat."
 						}
 					}
 				]
@@ -35,8 +35,8 @@
 				"type": "Link",
 				"value": [
 					{
-						"__TYPE__": "LinkContent",
 						"key": "c7b66cc5-ccde-4aa2-bff6-d6b220cba8bd",
+						"__TYPE__": "LinkContent",
 						"value": {
 							"__TYPE__": "ExternalLink",
 							"url": "http://twitter.com",
@@ -47,7 +47,6 @@
 				]
 			},
 			"image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
@@ -66,6 +65,8 @@
 					"background": "transparent"
 				},
 				"alt": "live",
+				"credits": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},
@@ -112,8 +113,8 @@
 				"type": "Link",
 				"value": [
 					{
-						"__TYPE__": "LinkContent",
 						"key": "41760533-0512-4add-84ed-816e9695a9f6",
+						"__TYPE__": "LinkContent",
 						"value": {
 							"__TYPE__": "ExternalLink",
 							"url": "https://slicemachine.dev",
@@ -124,7 +125,6 @@
 				]
 			},
 			"image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
@@ -143,6 +143,8 @@
 					"background": "transparent"
 				},
 				"alt": "curious",
+				"credits": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},

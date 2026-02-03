@@ -14,7 +14,8 @@
         "tagline": {
           "type": "Text",
           "config": {
-            "label": "Tagline"
+            "label": "Tagline",
+            "placeholder": ""
           }
         },
         "title": {
@@ -29,8 +30,10 @@
         "description": {
           "type": "StructuredText",
           "config": {
-            "multi": "paragraph,strong,em,hyperlink",
-            "label": "Description"
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
           }
         },
         "buttons": {
@@ -42,7 +45,10 @@
             "allowTargetBlank": true,
             "allowText": true,
             "repeat": true,
-            "variants": ["Primary", "Secondary"]
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
           }
         },
         "image": {
@@ -95,7 +101,10 @@
             "allowTargetBlank": true,
             "allowText": true,
             "repeat": true,
-            "variants": ["Primary", "Secondary"]
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
           }
         },
         "image": {

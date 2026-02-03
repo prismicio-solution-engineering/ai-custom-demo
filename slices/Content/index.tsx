@@ -1,11 +1,11 @@
 import { FC } from "react";
-import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
+import { ContentSlice } from "@/prismicio-types";
 
 /**
  * Props for `Content`.
  */
-export type ContentProps = SliceComponentProps<Content.ContentSlice>;
+export type ContentProps = SliceComponentProps<ContentSlice>;
 
 /**
  * Component for "Content" Slices.

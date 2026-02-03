@@ -5,7 +5,7 @@ import { SliceComponentProps } from "@prismicio/react";
 /**
  * Props for `Feature`.
  */
-export type FeatureProps = SliceComponentProps<Content.FeatureSlice>;
+export type FeatureProps = SliceComponentProps<Content.MediaFeatureSlice>;
 
 /**
  * Component for "Feature" Slices.
