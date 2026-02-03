@@ -32,43 +32,39 @@ export default async function Home({
     }
   }
 
-  const [header, footer, settings, landingPages, languages] = await Promise.all(
-    [
-      client
-        .getSingle("header", {
-          lang,
-        })
-        .catch(() =>
-          client.getSingle("header", {
-            lang: "en-us",
-          }),
-        ),
+  const [header, footer, settings, languages] = await Promise.all([
+    client
+      .getSingle("header", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle("header", {
+          lang: "en-us",
+        }),
+      ),
 
-      client
-        .getSingle("footer", {
-          lang,
-        })
-        .catch(() =>
-          client.getSingle("footer", {
-            lang: "en-us",
-          }),
-        ),
+    client
+      .getSingle("footer", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle("footer", {
+          lang: "en-us",
+        }),
+      ),
 
-      client
-        .getSingle("settings", {
-          lang,
-        })
-        .catch(() =>
-          client.getSingle("settings", {
-            lang: "en-us",
-          }),
-        ),
+    client
+      .getSingle("settings", {
+        lang,
+      })
+      .catch(() =>
+        client.getSingle("settings", {
+          lang: "en-us",
+        }),
+      ),
 
-      client.getAllByType("landing", { lang }).catch(() => []),
-
-      getLanguages(page, client),
-    ],
-  );
+    getLanguages(page, client),
+  ]);
 
   return (
     <>
