@@ -1,22 +1,22 @@
 import { FC } from "react";
-import type { Content } from "@prismicio/client";
+import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 
 /**
- * Props for `Content`.
+ * Props for `Hero`.
  */
-export type ContentProps = SliceComponentProps<Content.ContentSlice>;
+export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 
 /**
- * Component for "Content" Slices.
+ * Component for "Hero" Slices.
  */
-const Content: FC<ContentProps> = ({ slice }) => {
+const Hero: FC<HeroProps> = ({ slice }) => {
   return (
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      Placeholder component for content (variation: {slice.variation}) slices.
+      Placeholder component for hero (variation: {slice.variation}) slices.
       <br />
       <strong>You can edit this slice directly in your code editor.</strong>
       {/**
@@ -27,4 +27,4 @@ const Content: FC<ContentProps> = ({ slice }) => {
   );
 };
 
-export default Content;
+export default Hero;
