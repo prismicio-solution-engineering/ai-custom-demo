@@ -7,14 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "slicemachine": "start-slicemachine"
+    "slicemachine": "start-slicemachine",
+    "generate-brand": "tsx scripts/generate-brand.ts"
   },
   "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "0.2.29",
     "@prismicio/client": "7.20.3",
     "@prismicio/next": "2.0.2",
     "@prismicio/react": "3.2.2",
     "@slicemachine/manager": "0.27.1",
     "clsx": "2.1.1",
+    "axios": "1.13.4",
     "next": "16.1.6",
     "p-limit": "7.2.0",
     "react": "19.2.0",
