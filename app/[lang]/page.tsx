@@ -70,7 +70,6 @@ export default async function Home({
     <>
       {/* <Header settings={settings} page={header} languages={languages} /> */}
       {/* <Container size="full" className="mx-auto py-10"> */}
-      <h1 className="text-center">Hello World</h1>
       {/* </Container> */}
       <SliceZone
         slices={page.data.slices}
