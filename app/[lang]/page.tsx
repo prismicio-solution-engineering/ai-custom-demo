@@ -67,7 +67,7 @@ export default async function Home({
   ]);
 
   return (
-    <Container size="full" className="mx-auto py-10">
+    <Container size="full" className="mx-auto pb-10">
       <HeaderNav header={header} settings={settings} />
       <SliceZone
         slices={page.data.slices}

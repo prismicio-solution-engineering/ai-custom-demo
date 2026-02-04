@@ -7,6 +7,8 @@ import type { NavigationLinksSlice } from "@/prismicio-types";
 import { Button } from "@/components/Button";
 import { motion, AnimatePresence } from "motion/react";
 import { LinkField } from "@prismicio/client";
+import Image from "next/image";
+import slicify from './slicify.png'
 
 function useMediaQuery(query: string): boolean {
   const [matches, setMatches] = useState(false);
@@ -62,12 +64,12 @@ export function HeaderNav({
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
           <PrismicNextLink href="/" className="flex shrink-0 items-center">
-            <img
-              src="/logo.svg"
+            <Image
+              src={slicify}
               alt="Logo"
-              width={120}
-              height={40}
-              className="h-8 w-auto object-contain"
+              // width={120}
+              height={64}
+              className="max-h-16 w-auto object-contain"
             />
           </PrismicNextLink>
           <button
