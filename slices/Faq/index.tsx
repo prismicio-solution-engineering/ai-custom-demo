@@ -31,11 +31,12 @@ const Faq: FC<FaqProps> = ({ slice }) => {
           <div>
             <RichText
               field={slice.primary.title}
-              classNames="mb-5 text-5xl font-bold text-[var(--color-text-primary)] md:mb-6 md:text-7xl lg:text-8xl"
+              // classNames="mb-5 text-5xl font-bold text-[var(--color-text-primary)] md:mb-6 md:text-7xl lg:text-8xl"
+              classNames="mb-5 md:mb-6"
             />
             <RichText
               field={slice.primary.txt}
-              classNames="text-[var(--color-text-secondary)] md:text-md"
+              // classNames="text-[var(--color-text-secondary)] md:text-md"
             />
             <div className="mt-6 md:mt-8">
               <Button
@@ -61,7 +62,7 @@ const Faq: FC<FaqProps> = ({ slice }) => {
                 <summary className="flex list-none cursor-pointer items-center justify-between py-4 text-left text-[var(--color-text-primary)] md:py-5 md:text-md [&::-webkit-details-marker]:hidden">
                   <RichText
                     field={item.question}
-                    classNames="font-semibold"
+                    classNames="font-semibold !text-3xl"
                   />
                   <span
                     className="ml-2 shrink-0 transition-transform group-open:rotate-180"
@@ -84,7 +85,7 @@ const Faq: FC<FaqProps> = ({ slice }) => {
                 <div className="pb-4 text-[var(--color-text-secondary)] md:pb-6">
                   <RichText
                     field={item.answer}
-                    classNames="text-[var(--color-text-secondary)] md:text-md"
+                    // classNames="text-[var(--color-text-secondary)] md:text-md"
                   />
                 </div>
               </details>
@@ -108,11 +109,12 @@ const Faq: FC<FaqProps> = ({ slice }) => {
           <div className="mb-12 w-full max-w-lg md:mb-18 lg:mb-20">
             <RichText
               field={primary.title}
-              classNames="mb-5 text-5xl font-bold text-[var(--color-text-primary)] md:mb-6 md:text-7xl lg:text-8xl"
+              // classNames="mb-5 text-5xl font-bold text-[var(--color-text-primary)] md:mb-6 md:text-7xl lg:text-8xl"
+              classNames="mb-5 md:mb-6"
             />
             <RichText
               field={primary.txt}
-              classNames="text-[var(--color-text-secondary)] md:text-md"
+              // classNames="text-[var(--color-text-secondary)] md:text-md"
             />
           </div>
           <div>
@@ -123,11 +125,11 @@ const Faq: FC<FaqProps> = ({ slice }) => {
               >
                 <RichText
                   field={item.question}
-                  classNames="font-bold text-[var(--color-text-primary)] md:text-md"
+                  classNames="font-bold text-[var(--color-text-primary)] !text-3xl"
                 />
                 <RichText
                   field={item.answer}
-                  classNames="text-[var(--color-text-secondary)] md:text-md"
+                  // classNames="text-[var(--color-text-secondary)] md:text-md"
                 />
               </div>
             ))}
@@ -135,11 +137,12 @@ const Faq: FC<FaqProps> = ({ slice }) => {
           <div className="mt-12 md:mt-18 lg:mt-20">
             <RichText
               field={primary.title_foot}
-              classNames="mb-3 text-2xl font-bold text-[var(--color-text-primary)] md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl"
+              // classNames="mb-3 text-2xl font-bold text-[var(--color-text-primary)] md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl"
+              classNames="mb-3 md:mb-4 md:leading-[1.3]"
             />
             <RichText
               field={primary.txt_foot}
-              classNames="text-[var(--color-text-secondary)] md:text-md"
+              // classNames="text-[var(--color-text-secondary)] md:text-md"
             />
             <div className="mt-6 md:mt-8">
               <Button
@@ -171,11 +174,12 @@ const Faq: FC<FaqProps> = ({ slice }) => {
           <div className="mb-12 text-center md:mb-18 lg:mb-20">
             <RichText
               field={primary.title}
-              classNames="mb-5 text-5xl font-bold text-[var(--color-text-primary)] md:mb-6 md:text-7xl lg:text-8xl"
+              // classNames="mb-5 text-5xl font-bold text-[var(--color-text-primary)] md:mb-6 md:text-7xl lg:text-8xl"
+              classNames="mb-5 md:mb-6 md:text-7xl"
             />
             <RichText
               field={primary.txt}
-              classNames="text-[var(--color-text-secondary)] md:text-md"
+              // classNames="text-[var(--color-text-secondary)] md:text-md"
             />
           </div>
           <div className="space-y-0">
@@ -187,7 +191,7 @@ const Faq: FC<FaqProps> = ({ slice }) => {
                 <summary className="flex list-none cursor-pointer items-center justify-between py-4 text-left text-[var(--color-text-primary)] md:py-5 md:text-md [&::-webkit-details-marker]:hidden">
                   <RichText
                     field={item.question}
-                    classNames="font-semibold"
+                    classNames="font-semibold !text-3xl"
                   />
                   <span
                     className="ml-2 shrink-0 transition-transform group-open:rotate-180"
@@ -210,7 +214,7 @@ const Faq: FC<FaqProps> = ({ slice }) => {
                 <div className="pb-4 text-[var(--color-text-secondary)] md:pb-6">
                   <RichText
                     field={item.answer}
-                    classNames="text-[var(--color-text-secondary)] md:text-md"
+                    // classNames="text-[var(--color-text-secondary)] md:text-md"
                   />
                 </div>
               </details>
@@ -219,11 +223,12 @@ const Faq: FC<FaqProps> = ({ slice }) => {
           <div className="mx-auto mt-12 max-w-md text-center md:mt-18 lg:mt-20">
             <RichText
               field={primary.title_foot}
-              classNames="mb-3 text-2xl font-bold text-[var(--color-text-primary)] md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl"
+              // classNames="mb-3 text-2xl font-bold text-[var(--color-text-primary)] md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl"
+              classNames="mb-3 md:mb-4 md:leading-[1.3]"
             />
             <RichText
               field={primary.txt_foot}
-              classNames="text-[var(--color-text-secondary)] md:text-md"
+              // classNames="text-[var(--color-text-secondary)] md:text-md"
             />
             <div className="mt-6 md:mt-8">
               <Button

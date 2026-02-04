@@ -4,6 +4,7 @@ import { components } from "@/slices";
 import { createClient } from "@/prismicio";
 import { getLanguages } from "@/utils/getLanguages";
 import { HeaderNav } from "@/components/HeaderNav";
+import Container from "@/components/Container";
 
 export default async function Home({
   params,
@@ -66,13 +67,13 @@ export default async function Home({
   ]);
 
   return (
-    <>
+    <Container size="full" className="mx-auto py-10">
       <HeaderNav header={header} settings={settings} />
       <SliceZone
         slices={page.data.slices}
         components={components}
         context={{ lang }}
       />
-    </>
+    </Container>
   );
 }

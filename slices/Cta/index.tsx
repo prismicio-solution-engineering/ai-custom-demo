@@ -26,11 +26,12 @@ const Cta: FC<CtaProps> = ({ slice }) => {
             <div className="w-full max-w-lg">
               <RichText
                 field={slice.primary.title}
-                classNames="mb-3 text-4xl font-bold leading-[1.2] text-foreground md:mb-4 md:text-5xl lg:text-6xl"
+                // classNames="mb-3 text-4xl font-bold leading-[1.2] text-foreground md:mb-4 md:text-5xl lg:text-6xl"
+                classNames="mb-3 leading-[1.2] md:mb-4"
               />
               <RichText
                 field={slice.primary.txt}
-                classNames="text-(--color-text-secondary) md:text-md"
+                // classNames="text-(--color-text-secondary) md:text-md"
               />
             </div>
           </div>
@@ -62,12 +63,12 @@ const Cta: FC<CtaProps> = ({ slice }) => {
         <div className="container grid grid-rows-1 items-start gap-y-5 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:gap-x-20 lg:gap-y-16">
           <RichText
             field={slice.primary.title}
-            classNames="text-5xl font-bold text-foreground md:text-7xl lg:text-8xl"
+            // classNames="text-5xl font-bold text-foreground md:text-7xl lg:text-8xl"
           />
           <div>
             <RichText
               field={slice.primary.txt}
-              classNames="text-(--color-text-secondary) md:text-md"
+              // classNames="text-(--color-text-secondary) md:text-md"
             />
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
               {slice.primary.btns.map((button, index) => (

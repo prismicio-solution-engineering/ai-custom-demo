@@ -31,14 +31,17 @@
                 "type": "Image",
                 "config": {
                   "label": "Logo",
-                  "constraint": {},
+                  "constraint": {
+                    "height": 54
+                  },
                   "thumbnails": []
                 }
               }
             }
           }
         }
-      }
+      },
+      "items": {}
     }
   ]
 }

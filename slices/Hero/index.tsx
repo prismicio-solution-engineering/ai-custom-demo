@@ -34,11 +34,11 @@ const Hero: FC<HeroProps> = ({ slice }) => {
             <div className="w-full max-w-lg">
               <RichText
                 field={slice.primary.title}
-                classNames="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl"
+                // classNames="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl"
               />
               <RichText
                 field={slice.primary.description}
-                classNames="text-text-alternative md:text-md"
+                // classNames="text-text-alternative md:text-md"
               />
               <div className="mt-6 flex items-center justify-center gap-4 md:mt-8">
                 {slice.primary.buttons.map((button, index) => (
@@ -80,9 +80,13 @@ const Hero: FC<HeroProps> = ({ slice }) => {
         <div className="mx-auto w-full max-w-lg text-center">
           <RichText
             field={slice.primary.title}
-            classNames="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl"
+            // classNames="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl"
+            classNames="mb-5 md:mb-6 "
           />
-          <RichText field={slice.primary.description} classNames="md:text-md" />
+          <RichText
+            field={slice.primary.description}
+            // classNames="md:text-md"
+          />
 
           <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
             {slice.primary.buttons.map((button) => (
@@ -92,7 +96,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
                 variant={
                   button.variant === "Secondary" ? "secondary" : "primary"
                 }
-                size="md"
+                size="sm"
               />
             ))}
           </div>
