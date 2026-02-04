@@ -1,27 +1,49 @@
-@import "./brand-variables.css";
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ===========================================
+     BRAND COLORS (from Brand.dev)
+     Agent updates these from brand.colors array
+     =========================================== */
+  --brand-primary: #6366f1; /* colors[0].hex */
+  --brand-secondary: #ec4899; /* colors[1].hex */
+  --brand-accent: #8b5cf6; /* colors[2].hex (if exists) */
+
+  /* ===========================================
+     SEMANTIC COLORS
+     Agent sets these based on light/dark mode
+     =========================================== */
+
+  /* Backgrounds */
+  --color-background: #ffffff;
+  --color-surface: #f9fafb;
+
+  /* Text */
+  --color-text-primary: #171717;
+  --color-text-secondary: #6b7280;
+
+  /* Interactive */
+  --color-button-primary-bg: var(--brand-primary);
+  --color-button-primary-text: #ffffff;
+  --color-button-secondary-bg: transparent;
+  --color-button-secondary-text: var(--brand-primary);
+  --color-button-secondary-border: var(--brand-primary);
+
+  /* Borders */
+  --color-border: #e5e7eb;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-text-primary);
+  --color-primary: var(--brand-primary);
+  --color-secondary: var(--brand-secondary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }

@@ -38,6 +38,16 @@
 							"text": "nose",
 							"variant": "Primary"
 						}
+					},
+					{
+						"__TYPE__": "LinkContent",
+						"key": "d1299336-a8dd-42dd-9215-7511b9bc7903",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": "",
+							"variant": "Secondary"
+						}
 					}
 				]
 			}
