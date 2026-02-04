@@ -3,8 +3,7 @@ import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import { createClient } from "@/prismicio";
 import { getLanguages } from "@/utils/getLanguages";
-// import { Header } from "@/components/GlobalNavigation";
-// import Container from "@/components/Container";
+import { HeaderNav } from "@/components/HeaderNav";
 
 export default async function Home({
   params,
@@ -68,9 +67,7 @@ export default async function Home({
 
   return (
     <>
-      {/* <Header settings={settings} page={header} languages={languages} /> */}
-      {/* <Container size="full" className="mx-auto py-10"> */}
-      {/* </Container> */}
+      <HeaderNav header={header} settings={settings} />
       <SliceZone
         slices={page.data.slices}
         components={components}

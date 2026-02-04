@@ -6,7 +6,7 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { getLanguages } from "@/utils/getLanguages";
-// import Layout from "@/components/Layout";
+import { HeaderNav } from "@/components/HeaderNav";
 import { LandingDocument } from "@/prismicio-types";
 // import Disclaimer from "@/components/Disclaimer";
 
@@ -126,7 +126,7 @@ export default async function Landing({
 
   return (
     <>
-      {/* <Header settings={settings} page={header} languages={languages} /> */}
+      <HeaderNav header={header} settings={settings} />
       {/* <Layout
         lang={lang}
         languages={languages}

@@ -6,6 +6,7 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { getLanguages } from "@/utils/getLanguages";
+import { HeaderNav } from "@/components/HeaderNav";
 
 export async function generateMetadata({
   params,
@@ -122,6 +123,7 @@ export default async function Article({
 
   return (
     <>
+      <HeaderNav header={header} settings={settings} />
       <SliceZone
         slices={page.data.slices}
         components={components}

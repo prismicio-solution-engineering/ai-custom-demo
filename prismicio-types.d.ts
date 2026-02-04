@@ -372,6 +372,7 @@ export type HeaderDocument<Lang extends string = string> =
   >;
 
 type HomeDocumentDataSlicesSlice =
+  | LogoSlice
   | HeroSlice
   | TestimonialsSlice
   | CtaSlice
