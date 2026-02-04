@@ -39,7 +39,10 @@
             "allowTargetBlank": true,
             "allowText": true,
             "repeat": false,
-            "variants": ["Primary", "Secondary"]
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
           }
         },
         "grp": {
@@ -74,7 +77,7 @@
     },
     {
       "id": "variation1",
-      "name": "Variation 1",
+      "name": "With Footer",
       "docURL": "...",
       "version": "initial",
       "description": "Default",
@@ -152,7 +155,10 @@
             "allowTargetBlank": true,
             "allowText": true,
             "repeat": false,
-            "variants": ["Primary", "Secondary"]
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
           }
         }
       },
@@ -238,7 +244,10 @@
             "allowTargetBlank": true,
             "allowText": true,
             "repeat": false,
-            "variants": ["Primary", "Secondary"]
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
           }
         }
       },

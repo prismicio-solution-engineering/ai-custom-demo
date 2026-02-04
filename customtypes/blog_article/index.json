@@ -63,19 +63,10 @@
             "testimonials": {
               "type": "SharedSlice"
             },
-            "content": {
-              "type": "SharedSlice"
-            },
             "faq": {
               "type": "SharedSlice"
             },
-            "carousel": {
-              "type": "SharedSlice"
-            },
             "cta": {
-              "type": "SharedSlice"
-            },
-            "media_feature": {
               "type": "SharedSlice"
             }
           }

@@ -23,15 +23,6 @@
             "faq": {
               "type": "SharedSlice"
             },
-            "media_feature": {
-              "type": "SharedSlice"
-            },
-            "carousel": {
-              "type": "SharedSlice"
-            },
-            "content": {
-              "type": "SharedSlice"
-            },
             "cta": {
               "type": "SharedSlice"
             }
