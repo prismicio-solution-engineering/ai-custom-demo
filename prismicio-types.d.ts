@@ -516,54 +516,6 @@ interface SettingsDocumentData {
    * - **Documentation**: https://prismic.io/docs/fields/text
    */
   company_name: prismic.KeyTextField;
-
-  /**
-   * Company logo field in *Settings*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: settings.company_logo
-   * - **Tab**: Company
-   * - **Documentation**: https://prismic.io/docs/fields/image
-   */
-  company_logo: prismic.ImageField<never> /**
-   * Font - Heading field in *Settings*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: Proxima Bold
-   * - **API ID Path**: settings.font_heading
-   * - **Tab**: Branding
-   * - **Documentation**: https://prismic.io/docs/fields/select
-   */;
-  font_heading: prismic.SelectField<"Proxima Bold" | "Arial Bold", "filled">;
-
-  /**
-   * Font - Text field in *Settings*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: Inter
-   * - **API ID Path**: settings.font_txt
-   * - **Tab**: Branding
-   * - **Documentation**: https://prismic.io/docs/fields/select
-   */
-  font_txt: prismic.SelectField<"Inter" | "Helvetica", "filled">;
-
-  /**
-   * Border style field in *Settings*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: Square
-   * - **API ID Path**: settings.border_style
-   * - **Tab**: Branding
-   * - **Documentation**: https://prismic.io/docs/fields/select
-   */
-  border_style: prismic.SelectField<
-    "Square" | "Medium rounded" | "Rounded",
-    "filled"
-  >;
 }
 
 /**
@@ -649,35 +601,35 @@ export type CtaSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *Cta → Variation 1 → Primary*
+ * Primary content in *Cta → Two column → Primary*
  */
-export interface CtaSliceVariation1Primary {
+export interface CtaSliceTwoColumnPrimary {
   /**
-   * Title field in *Cta → Variation 1 → Primary*
+   * Title field in *Cta → Two column → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation1.primary.title
+   * - **API ID Path**: cta.twoColumn.primary.title
    * - **Documentation**: https://prismic.io/docs/fields/rich-text
    */
   title: prismic.RichTextField;
 
   /**
-   * Text field in *Cta → Variation 1 → Primary*
+   * Text field in *Cta → Two column → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation1.primary.txt
+   * - **API ID Path**: cta.twoColumn.primary.txt
    * - **Documentation**: https://prismic.io/docs/fields/rich-text
    */
   txt: prismic.RichTextField;
 
   /**
-   * Buttons field in *Cta → Variation 1 → Primary*
+   * Buttons field in *Cta → Two column → Primary*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation1.primary.btns
+   * - **API ID Path**: cta.twoColumn.primary.btns
    * - **Documentation**: https://prismic.io/docs/fields/link
    */
   btns: prismic.Repeatable<
@@ -689,116 +641,25 @@ export interface CtaSliceVariation1Primary {
       "Primary" | "Secondary"
     >
   >;
-
-  /**
-   * Image field in *Cta → Variation 1 → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation1.primary.img
-   * - **Documentation**: https://prismic.io/docs/fields/image
-   */
-  img: prismic.ImageField<never>;
 }
 
 /**
- * Variation 1 variation for Cta Slice
+ * Two column variation for Cta Slice
  *
- * - **API ID**: `variation1`
- * - **Description**: Default
+ * - **API ID**: `twoColumn`
+ * - **Description**: Heading left, description and buttons right
  * - **Documentation**: https://prismic.io/docs/slices
  */
-export type CtaSliceVariation1 = prismic.SharedSliceVariation<
-  "variation1",
-  Simplify<CtaSliceVariation1Primary>,
-  never
->;
-
-/**
- * Primary content in *Cta → Variation 2 → Primary*
- */
-export interface CtaSliceVariation2Primary {
-  /**
-   * Title field in *Cta → Variation 2 → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation2.primary.title
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Text field in *Cta → Variation 2 → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation2.primary.txt
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  txt: prismic.RichTextField;
-
-  /**
-   * Input - placeholder field in *Cta → Variation 2 → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: Enter your email
-   * - **API ID Path**: cta.variation2.primary.input_placeholder
-   * - **Documentation**: https://prismic.io/docs/fields/text
-   */
-  input_placeholder: prismic.KeyTextField;
-
-  /**
-   * Button - Text field in *Cta → Variation 2 → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: Sign up
-   * - **API ID Path**: cta.variation2.primary.btn_txt
-   * - **Documentation**: https://prismic.io/docs/fields/text
-   */
-  btn_txt: prismic.KeyTextField;
-
-  /**
-   * Legals description field in *Cta → Variation 2 → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation2.primary.legals_dsc
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  legals_dsc: prismic.RichTextField;
-
-  /**
-   * Image field in *Cta → Variation 2 → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: cta.variation2.primary.img
-   * - **Documentation**: https://prismic.io/docs/fields/image
-   */
-  img: prismic.ImageField<never>;
-}
-
-/**
- * Variation 2 variation for Cta Slice
- *
- * - **API ID**: `variation2`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slices
- */
-export type CtaSliceVariation2 = prismic.SharedSliceVariation<
-  "variation2",
-  Simplify<CtaSliceVariation2Primary>,
+export type CtaSliceTwoColumn = prismic.SharedSliceVariation<
+  "twoColumn",
+  Simplify<CtaSliceTwoColumnPrimary>,
   never
 >;
 
 /**
  * Slice variation for *Cta*
  */
-type CtaSliceVariation =
-  | CtaSliceDefault
-  | CtaSliceVariation1
-  | CtaSliceVariation2;
+type CtaSliceVariation = CtaSliceDefault | CtaSliceTwoColumn;
 
 /**
  * Cta Shared Slice
@@ -1588,12 +1449,10 @@ declare module "@prismicio/client" {
       AllDocumentTypes,
       CtaSlice,
       CtaSliceDefaultPrimary,
-      CtaSliceVariation1Primary,
-      CtaSliceVariation2Primary,
+      CtaSliceTwoColumnPrimary,
       CtaSliceVariation,
       CtaSliceDefault,
-      CtaSliceVariation1,
-      CtaSliceVariation2,
+      CtaSliceTwoColumn,
       FaqSlice,
       FaqSliceDefaultPrimaryGrpItem,
       FaqSliceDefaultPrimary,

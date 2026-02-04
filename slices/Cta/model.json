@@ -39,19 +39,22 @@
             "allowTargetBlank": true,
             "allowText": true,
             "repeat": true,
-            "variants": ["Primary", "Secondary"]
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
           }
         }
       },
       "items": {}
     },
     {
-      "id": "variation1",
-      "name": "Variation 1",
+      "id": "twoColumn",
+      "name": "Two column",
       "docURL": "...",
       "version": "initial",
-      "description": "Default",
-      "imageUrl": "https://images.prismic.io/prismic-custom-demo/shared-slices/cta/variation1/83259018741cb0ea801614ce018ff2ac9fbffba1.png?auto=compress%2Cformat",
+      "description": "Heading left, description and buttons right",
+      "imageUrl": "",
       "primary": {
         "title": {
           "type": "StructuredText",
@@ -80,75 +83,10 @@
             "allowTargetBlank": true,
             "allowText": true,
             "repeat": true,
-            "variants": ["Primary", "Secondary"]
-          }
-        },
-        "img": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "variation2",
-      "name": "Variation 2",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "https://images.prismic.io/prismic-custom-demo/shared-slices/cta/variation2/ecb592913040080dbc69bf3e78025930c47b28b2.png?auto=compress%2Cformat",
-      "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "heading2"
-          }
-        },
-        "txt": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Text",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph"
-          }
-        },
-        "input_placeholder": {
-          "type": "Text",
-          "config": {
-            "label": "Input - placeholder",
-            "placeholder": "Enter your email"
-          }
-        },
-        "btn_txt": {
-          "type": "Text",
-          "config": {
-            "label": "Button - Text",
-            "placeholder": "Sign up"
-          }
-        },
-        "legals_dsc": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Legals description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,hyperlink,strong,em"
-          }
-        },
-        "img": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
+            "variants": [
+              "Primary",
+              "Secondary"
+            ]
           }
         }
       },
