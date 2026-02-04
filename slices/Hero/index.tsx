@@ -45,7 +45,9 @@ const Hero: FC<HeroProps> = ({ slice }) => {
                   <Button
                     key={button.key ?? index}
                     field={button}
-                    variant="primary"
+                    variant={
+                      button.variant === "Secondary" ? "secondary" : "primary"
+                    }
                     size="md"
                   />
                 ))}
@@ -87,7 +89,9 @@ const Hero: FC<HeroProps> = ({ slice }) => {
               <Button
                 key={button.key}
                 field={button}
-                variant="primary"
+                variant={
+                  button.variant === "Secondary" ? "secondary" : "primary"
+                }
                 size="md"
               />
             ))}
