@@ -604,43 +604,6 @@ export type AllDocumentTypes =
   | SettingsDocument;
 
 /**
- * Item in *Carousel → Default → Primary → Grp*
- */
-export interface CarouselSliceDefaultPrimaryGrpItem {
-  /**
-   * Article field in *Carousel → Default → Primary → Grp*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: carousel.default.primary.grp[].article
-   * - **Documentation**: https://prismic.io/docs/fields/content-relationship
-   */
-  article: ContentRelationshipFieldWithData<
-    [
-      {
-        id: "article";
-        fields: [
-          "read_time",
-          "date",
-          "img",
-          "title",
-          "desc",
-          {
-            id: "author";
-            customtypes: [{ id: "author"; fields: ["img", "name"] }];
-          },
-          {
-            id: "category";
-            customtypes: [{ id: "category"; fields: ["name"] }];
-          },
-          "read_time_txt",
-        ];
-      },
-    ]
-  >;
-}
-
-/**
  * Item in *Carousel → Variation 1 → Primary → Grp*
  */
 export interface CarouselSliceVariation1PrimaryGrpItem {
@@ -656,87 +619,19 @@ export interface CarouselSliceVariation1PrimaryGrpItem {
 }
 
 /**
- * Item in *Carousel → Variation 2 → Primary → Grp*
+ * Item in *Carousel → Slider → Primary → Grp*
  */
 export interface CarouselSliceVariation2PrimaryGrpItem {
   /**
-   * Logo field in *Carousel → Variation 2 → Primary → Grp*
+   * Image field in *Carousel → Slider → Primary → Grp*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: carousel.variation2.primary.grp[].logo
+   * - **API ID Path**: carousel.variation2.primary.grp[].image
    * - **Documentation**: https://prismic.io/docs/fields/image
    */
-  logo: prismic.ImageField<never>;
+  image: prismic.ImageField<never>;
 }
-
-/**
- * Primary content in *Carousel → Default → Primary*
- */
-export interface CarouselSliceDefaultPrimary {
-  /**
-   * Ontitle field in *Carousel → Default → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: Blog
-   * - **API ID Path**: carousel.default.primary.ontitle
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  ontitle: prismic.RichTextField;
-
-  /**
-   * Title field in *Carousel → Default → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: carousel.default.primary.title
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Text field in *Carousel → Default → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: carousel.default.primary.txt
-   * - **Documentation**: https://prismic.io/docs/fields/rich-text
-   */
-  txt: prismic.RichTextField;
-
-  /**
-   * Button - Text field in *Carousel → Default → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: View all
-   * - **API ID Path**: carousel.default.primary.btn_txt
-   * - **Documentation**: https://prismic.io/docs/fields/text
-   */
-  btn_txt: prismic.KeyTextField;
-
-  /**
-   * Grp field in *Carousel → Default → Primary*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: carousel.default.primary.grp[]
-   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
-   */
-  grp: prismic.GroupField<Simplify<CarouselSliceDefaultPrimaryGrpItem>>;
-}
-
-/**
- * Default variation for Carousel Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slices
- */
-export type CarouselSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<CarouselSliceDefaultPrimary>,
-  never
->;
 
 /**
  * Primary content in *Carousel → Variation 1 → Primary*
@@ -787,11 +682,11 @@ export type CarouselSliceVariation1 = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *Carousel → Variation 2 → Primary*
+ * Primary content in *Carousel → Slider → Primary*
  */
 export interface CarouselSliceVariation2Primary {
   /**
-   * Title field in *Carousel → Variation 2 → Primary*
+   * Title field in *Carousel → Slider → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
@@ -801,7 +696,7 @@ export interface CarouselSliceVariation2Primary {
   title: prismic.RichTextField;
 
   /**
-   * Grp field in *Carousel → Variation 2 → Primary*
+   * Grp field in *Carousel → Slider → Primary*
    *
    * - **Field Type**: Group
    * - **Placeholder**: *None*
@@ -812,7 +707,7 @@ export interface CarouselSliceVariation2Primary {
 }
 
 /**
- * Variation 2 variation for Carousel Slice
+ * Slider variation for Carousel Slice
  *
  * - **API ID**: `variation2`
  * - **Description**: Default
@@ -827,10 +722,7 @@ export type CarouselSliceVariation2 = prismic.SharedSliceVariation<
 /**
  * Slice variation for *Carousel*
  */
-type CarouselSliceVariation =
-  | CarouselSliceDefault
-  | CarouselSliceVariation1
-  | CarouselSliceVariation2;
+type CarouselSliceVariation = CarouselSliceVariation1 | CarouselSliceVariation2;
 
 /**
  * Carousel Shared Slice
@@ -2374,14 +2266,11 @@ declare module "@prismicio/client" {
       SettingsDocumentData,
       AllDocumentTypes,
       CarouselSlice,
-      CarouselSliceDefaultPrimaryGrpItem,
-      CarouselSliceDefaultPrimary,
       CarouselSliceVariation1PrimaryGrpItem,
       CarouselSliceVariation1Primary,
       CarouselSliceVariation2PrimaryGrpItem,
       CarouselSliceVariation2Primary,
       CarouselSliceVariation,
-      CarouselSliceDefault,
       CarouselSliceVariation1,
       CarouselSliceVariation2,
       ContentSlice,
