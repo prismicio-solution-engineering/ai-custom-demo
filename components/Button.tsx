@@ -3,10 +3,9 @@ import type * as prismic from "@prismicio/client";
 import type * as clsxT from "clsx";
 import { PrismicNextLink } from "@prismicio/next";
 
-// TODO : Update colors to match design system
 const baseStyles: clsxT.ClassDictionary = {
   primary:
-    "group inline-flex items-center justify-center rounded-lg  font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2",
+    "group inline-flex items-center justify-center rounded-lg font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2",
   secondary:
     "group inline-flex ring-1 items-center justify-center rounded-lg focus:outline-none font-semibold border-2 rounded-lg",
   link: "font-semibold underline underline-offset-8 hover:underline-offset-4 mt-4 transition-all duration-300 ease-in-out",
@@ -15,11 +14,11 @@ const baseStyles: clsxT.ClassDictionary = {
 
 const variantStyles: clsxT.ClassDictionary = {
   primary:
-    "bg-gray-900 text-white hover:bg-gray-900 transition duration-500 ease-in-out",
+    "bg-[var(--color-button-primary-bg)] text-[var(--color-button-primary-text)] hover:opacity-90 transition duration-500 ease-in-out",
   secondary:
-    "ring-slate-200 hover:ring-slate-300 bg-transparent text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white transition duration-500 ease-in-out",
-  link: "text-gray-900",
-  text: "text-gray-900",
+    "ring-[var(--color-button-secondary-border)] bg-[var(--color-button-secondary-bg)] text-[var(--color-button-secondary-text)] border-[var(--color-button-secondary-border)] hover:opacity-80 transition duration-500 ease-in-out",
+  link: "text-[var(--color-text-primary)]",
+  text: "text-[var(--color-text-primary)]",
 };
 
 const variantSize: clsxT.ClassDictionary = {
@@ -54,7 +53,7 @@ export function Button({
     // variantStyles[variant][color],
     variantStyles[variant],
     variantSize[size],
-    className,
+    className
   );
 
   if (submit) {
